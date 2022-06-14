@@ -44,6 +44,32 @@ site_name: mkdocs.balloon.net.eu.org
 
 ___
 
+## mkdocs-bootswatch テーマ
+
+[<i class="fa-brands fa-github"></i> GitHub mkdocs/mkdocs-bootswatch](https://github.com/mkdocs/mkdocs-bootswatch)
+
+Bootswatch 4 系のテーマを使用できます。  
+2022年6月 現在 Bootswatch 5 が最新ですが、MkDocs テーマではまだ非対応です。
+
+```yaml
+theme:
+    name: cosmo
+```
+
+`nav_style` でヘッダ部分の表示を変更できます。`light` ・ `dark` があります。
+
+```
+theme:
+    name: cerulean
+    nav_style: dark
+```
+
+テーマ毎の細かい表示は Bootswatch を確認して下さい。
+
+[<i class="fa-brands fa-bootstrap"></i> Bootswatch / Bootstrap 4](https://bootswatch.com/4/)
+
+___
+
 ## index.md
 
 **site** 内の **index.html** に変換されます。  
