@@ -1,5 +1,6 @@
 site_name: mkdocs.balloon.net.eu.org
 site_url: https://mkdocs.balloon.net.eu.org/
+site_description: MkDocs 日本語サンプル。mkdocs コマンド、mkdocs.yml、mkdocs-bootswatch テーマ、index.md、検索フォーム、Open Graph (OGP) ・ Twitter Card。
 repo_url: https://github.com/fu-sen/mkdocs.balloon.net.eu.org
 repo_name: <i class="fa-brands fa-github"></i> GitHub ソース
 edit_uri: ""
