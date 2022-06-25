@@ -3,8 +3,7 @@
 [<i class="fa-solid fa-link"></i> MkDocs](https://www.mkdocs.org/)  - 公式サイト  
 [<i class="fa-brands fa-github"></i> GitHub mkdocs/mkdocs](https://github.com/mkdocs/mkdocs/)
 
-MkDocs の日本語サンプルです。
-
+MkDocs の日本語サンプルです。  
 MkDocs に関する詳細はこちらを参照して下さい。
 
 [🎈 MkDocs | ふうせん🎈 FU-SEN](https://balloon.asia/mkdocs/)
@@ -108,8 +107,47 @@ MkDocs 1.1 以前のバージョンでも Material for MkDocs が日本語対応
 
 ___
 
+## サイズ最小化（Minify）
+
+[<i class="fa-brands fa-github"></i> GitHub byrnereese/mkdocs-minify-plugin](https://github.com/byrnereese/mkdocs-minify-plugin)
+
+`mkdocs-minify-plugin` を使用し、`plugin` に項目を追加します。
+
+```yaml
+plugins:
+    - minify:
+        minify_html: true
+        minify_js: true
+        minify_css: true
+```
+
+___
+
 ## Open Graph (OGP) ・ Twitter Card
 
 MkDocs のテーマは対応していません。テーマのカスタムが必要です。
 
 [🎈 MkDocs <i class="fa-solid fa-hashtag"></i> テーマのカスタマイズ | ふうせん🎈 FU-SEN](https://balloon.asia/mkdocs/#%E3%83%86%E3%83%BC%E3%83%9E%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA)
+
+___
+
+## Cloudflare Pages
+
+mkdocs.balloon.net.eu.org は Cloudflare Pages を用いています。
+
+[<i class="fa-brands fa-cloudflare"></i> Cloudflare Pages](https://pages.cloudflare.com/)  
+[🎈<i class="fa-brands fa-github"></i> GitHub fu-sen/CloudflarePages-MkDocs](https://github.com/fu-sen/CloudflarePages-MkDocs)
+
+Cloudflare Pages 側で Git 連携を用いて MkDocs をビルドする場合は  
+次を追加する必要があります。
+
+- **requirements.txt** - `mkdocs` とインストールするプラグインを指定します。
+- **runtime.txt** - Python のバージョン。
+
+ダイレクトアップロード（ドラッグ＆ドロップ または wrangler）では  
+ビルド動作を行いません。別途ビルド作業が必要です。
+
+[<i class="fa-brands fa-github"></i> Wiki - Mkdocs Deployments | GitHub mkdocs/mkdocs](https://github.com/mkdocs/mkdocs/wiki/Mkdocs-Deployments)
+
+Netlify・Vercel などを用いてのビルドも可能です。  
+また GitHub Actions を用いてビルド作業を行う事もできます。
