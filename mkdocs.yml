@@ -17,3 +17,7 @@ extra_css:
 plugins:
     - search:
         min_search_length: 1
+    - minify:
+        minify_html: true
+        minify_js: true
+        minify_css: true
